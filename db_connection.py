@@ -1,7 +1,7 @@
 import psycopg2
 import yaml
 try:
-    with open("data/config.yaml") as f:
+    with open("config.yaml") as f:
         config = yaml.load(f, Loader=yaml.FullLoader)
 except:
     print("Config File Not Found.")
